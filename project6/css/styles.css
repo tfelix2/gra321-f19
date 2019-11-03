@@ -1,0 +1,188 @@
+/* Styles for project 6 */
+
+*, *:before, *after {
+    box-sizing:border-box;
+}
+
+body {
+    letter-spacing: .5px;
+    line-height: 1.5;
+    font-family: century gothic, sans-serif;
+    font-style: normal;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.container li{
+    font-weight: 400;
+}
+
+.column {
+    width:28%;
+    position:relative;
+    left:40px;
+    top: 23px;
+    padding-right: .25rem;
+    font-weight:400;
+}
+.column p{
+    text-align: center;
+}
+
+.column a:link{
+    color:#5c320D;
+    text-decoration: none;
+}
+
+.column a:visited{
+    color:#5c320D;
+}
+.column a:hover{
+    color:olive;
+}
+
+.column2 {
+    width: 50%;
+    font-weight:500;
+}
+
+nav {
+    background-color:#FFE7CF;
+    position:absolute;
+    top:188px;
+    padding-right:13px;
+}
+
+nav img{
+    position:relative;
+    bottom: 8px;
+    right: 2px;
+}
+nav li{
+    font-weight: 400;
+}
+
+nav a:link {
+    color: #5c320D;
+    text-decoration: none;
+}
+
+nav a:visited {
+    color: #5c320D;   
+}
+
+nav a:hover {
+    color: olive;
+}
+
+h1 {
+    background-color: #5c320D;
+    padding: 30px;
+    margin:0;
+    color: #ffffff;
+    font-size: 45;
+    position:relative;
+}
+
+.logo {
+    padding: 10px;
+    background-color: #5c230D;
+}
+
+h2 {
+    color: #5c320D;
+    font-weight: 600;
+    position:relative;
+    left:25px;
+    margin-bottom: 0;
+}
+
+h3 {
+    color: #5c320D;
+    font-weight:600;
+    position:relative;
+    left:25px;
+    margin-top: 1.5rem;
+}
+
+.prices{
+    display: grid;
+    grid-template-columns: 120px 120px 120px;
+    position:relative;
+
+}
+
+h4 {
+    color: #ffffff;
+    position:relative;
+    left:25px;
+}
+
+footer {
+    background-color: #5c320D;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px
+}
+
+footer li{
+    color: #ffffff;
+    font-weight: 400;
+}
+
+footer img{
+    position:relative;
+    left: 38px;
+    padding-right: .5rem;
+}
+
+li {
+    color: #5c320D;
+    margin-bottom: .5rem;
+    font-weight: 600;
+}
+
+ul {
+    list-style: none;
+
+}
+
+p {
+    color: #5c320D;
+    margin-top: 0;
+    margin-bottom: 1.75rem;
+}
+img {
+    max-width: 100%;
+}
+
+.columns {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.drinks:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (min-width: 1280px) {
+    
+}
+
+@media (min-width: 600px) {
+        
+    }
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}

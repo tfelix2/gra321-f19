@@ -13,9 +13,6 @@
     </div>
     <div class="home">
         <div class="column">
-            <img src="img/menu%20button.png" alt="menu button"/>
-        </div>
-        <div class="column">
             <p><a class="button" href="#Contact Us">About Us</a></p>
         </div>
         <div class="column">
@@ -34,6 +31,13 @@
         </div>
     </div>
     <nav>
+        <div id="sidebar">
+            <div class="toggle-btn" onclick="toggleSidebar()"><a>
+            <span></span>
+            <span></span>
+            <span></span>
+            </a>
+            </div>
         <ul>
             <li>Home</li>
             <img src="img/line.png" alt="line" width="90%"/>
@@ -49,6 +53,11 @@
             <li><a class="button" href="#Chocolate Chip Cookie">Chocolate Chip Cookie</a></li>
             <li><a class="button" href="#Brownie">Brownie</a></li>
         </ul>
+        <script type="text/javascript">
+        function toggleSidebar(){ document.getElementById("sidebar").classList.toggle('active');
+        }
+        </script>
+        </div>    
     </nav>
     <h2>Menu</h2>
     <div class="drinks">
@@ -202,9 +211,9 @@
             <h3>All 2.70</h3>
         </div>
         <ul>
-        <li>Chocolate</li>
-        <li>Blueberry</li>
-    </ul>
+            <li>Chocolate</li>
+            <li>Blueberry</li>
+        </ul>
     </div>
     <div class="sweets">
         <div class="column2">

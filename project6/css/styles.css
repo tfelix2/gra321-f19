@@ -12,13 +12,21 @@ body {
     margin: 0;
 }
 
-.container {
+.logo {
+    padding: 10px;
+    background-color: #5c230D;
+}
+
+.logo img {
+    background-image: url(cafelogo2.png);
+    background-size: contain;
+    width:25%;
+}
+
+.home {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-}
-.container li{
-    font-weight: 400;
 }
 
 .column {
@@ -43,11 +51,6 @@ body {
 }
 .column a:hover{
     color:olive;
-}
-
-.column2 {
-    width: 50%;
-    font-weight:500;
 }
 
 nav {
@@ -88,32 +91,63 @@ h1 {
     position:relative;
 }
 
-.logo {
-    padding: 10px;
-    background-color: #5c230D;
-}
-
 h2 {
     color: #5c320D;
     font-weight: 600;
-    position:relative;
-    left:25px;
+    padding-left:25px;
     margin-bottom: 0;
 }
 
 h3 {
     color: #5c320D;
     font-weight:600;
-    position:relative;
-    left:25px;
+    padding-left:25px;
     margin-top: 1.5rem;
+    margin-bottom: 0;
 }
 
 .prices{
     display: grid;
     grid-template-columns: 120px 120px 120px;
     position:relative;
+}
 
+.columns {
+    float: left;
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.drinks:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.food{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.food li{
+    font-weight: 600;
+}
+
+.column2 {
+    width: 50%;
+    font-weight:400;
+    position: relative;
+}
+
+.sweets {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.sweets li {
+    font-weight: 400;
 }
 
 h4 {
@@ -138,6 +172,20 @@ footer img{
     position:relative;
     left: 38px;
     padding-right: .5rem;
+    height: 40px;
+    width: 40px;
+}
+
+.info {
+    float: left;
+    padding-right: 60px;
+}
+
+/* Clear floats after the columns */
+.about:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 li {
@@ -148,41 +196,81 @@ li {
 
 ul {
     list-style: none;
-
 }
 
 p {
     color: #5c320D;
     margin-top: 0;
     margin-bottom: 1.75rem;
+    padding-right:25px;
 }
+
 img {
     max-width: 100%;
 }
 
-.columns {
-  float: left;
-  width: 50%;
-}
-
-/* Clear floats after the columns */
-.drinks:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-@media (min-width: 1280px) {
+@media screen and (min-width:1025px) {
+    .logo {
+        padding: 10px;
+        background-color: #5c230D;
+    }
     
-}
-
-@media (min-width: 600px) {
-        
+    .logo img {
+        background-image: url(cafelogo2.png);
+        background-size: contain;
+        width:10%;
+    }
+    
+    picture img{
+        padding-left: 519px;
+        width: 59%;
     }
 
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .columns {
-    width: 100%;
-  }
+    .column {
+        width:30%;
+        position:relative;
+        left:64px;
+        top: 23px;
+        padding-right: .25rem;
+        font-weight:400;
+    }
+    
+    nav {
+        background-color:#ffffff;
+        position: absolute;
+        top: 200px;
+        padding-right:13px;
+        padding-left: 25px;
+    }
+    
+    h2 {
+        padding-left: 63px;
+    }
+    
+    .drinks {
+        padding-left: 40px;
+    }
+    
+    .food {
+        padding-left: 40px;
+    }
+    
+    .sweets {
+        padding-left: 40px;
+    }
+    
+    .about{
+        padding-left: 40px;
+    }
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .columns {
+        width: 100%;
+    }
+    
+    .info{
+        width:100%;
+    }
 }

@@ -9,9 +9,9 @@
 </head>
 <body>
     <div class="logo">
-        <img src="img/cafe%20logo.png" alt="cafe logo"height=25% width=25%/>
+        <img src="img/cafe%20logo.png" alt="cafe logo"/>
     </div>
-    <div class="container">
+    <div class="home">
         <div class="column">
             <img src="img/menu%20button.png" alt="menu button"/>
         </div>
@@ -22,8 +22,17 @@
             <img src="img/locations icon.png" alt="location button" height="45%" align="right"/>
         </div>
     </div>
-    <img src="img/croissant 2.jpg" alt="Croissant and coffee" />
-   
+    <div class="header">
+        <div class="photo">
+            <picture>
+                <source media="(min-width:800px)"
+                    srcset="img/croissant.jpg"/>
+                <source media="(max-width:800px)"
+                    srcset="img/croissant 2.jpg"/>
+                <img src="img/croissant 2.jpg" alt="Croissant and coffee"/>
+            </picture>
+        </div>
+    </div>
     <nav>
         <ul>
             <li>Home</li>
@@ -44,118 +53,117 @@
     <h2>Menu</h2>
     <div class="drinks">
         <div class="columns">
-    <h3 id="Hot Drinks">Hot Drinks</h3>
-        <ul>
-            <li>Drip Coffee</li>
-            <div class="prices">
-                <p>S 1.95</p>
-                <p>M 2.25</p>
-                <p>L 2.50</p>
+            <h3 id="Hot Drinks">Hot Drinks</h3>
+                <ul>
+                    <li>Drip Coffee</li>
+                    <div class="prices">
+                        <p>S 1.95</p>
+                        <p>M 2.25</p>
+                        <p>L 2.50</p>
+                    </div>
+                    <li>Expresso</li>
+                    <div class="prices">
+                        <p>S 1.95</p>
+                        <p>M 2.50</p>
+                        <p>L 3.00</p>
+                    </div>
+                    <li>Macchiato</li>
+                    <div class="prices">
+                        <p>S 2.00</p>
+                        <p>M 2.50</p>
+                        <p>L 3.25</p>
+                    </div>
+                    <li>Americano</li>
+                    <div class="prices">
+                        <p>S 2.00</p>
+                        <p>M 2.50</p>
+                        <p>L 3.25</p>
+                    </div>
+                    <li>Cappuccino</li>
+                    <div class="prices">
+                        <p>S 2.95</p>
+                        <p>M 3.50</p>
+                        <p>L 4.25</p>
+                    </div>
+                    <li>Caffe Latte</li>
+                    <div class="prices">
+                        <p>S 3.25</p>
+                        <p>M 3.75</p>
+                        <p>L 4.50</p>
+                    </div>
+                    <li>Caffe Mocha</li>
+                    <div class="prices">
+                        <p>S 3.25</p>
+                        <p>M 4.00</p>
+                        <p>L 4.75</p>
+                    </div>
+                    <li>Hot Chocolate</li>
+                    <div class="prices">
+                        <p>S 2.75</p>
+                        <p>M 3.25</p>
+                        <p>L 3.95</p>
+                    </div>
+                    <li>Chai Latte</li>
+                    <div class="prices">
+                        <p>S 3.25</p>
+                        <p>M 3.95</p>
+                        <p>L 4.25</p>
+                    </div>
+                </ul>
             </div>
-            <li>Expresso</li>
-            <div class="prices">
-                <p>S 1.95</p>
-                <p>M 2.50</p>
-                <p>L 3.00</p>
-            </div>
-            <li>Macchiato</li>
-            <div class="prices">
-                <p>S 2.00</p>
-                <p>M 2.50</p>
-                <p>L 3.25</p>
-            </div>
-            <li>Americano</li>
-            <div class="prices">
-                <p>S 2.00</p>
-                <p>M 2.50</p>
-                <p>L 3.25</p>
-            </div>
-            <li>Cappuccino</li>
-            <div class="prices">
-                <p>S 2.95</p>
-                <p>M 3.50</p>
-                <p>L 4.25</p>
-            </div>
-            <li>Caffe Latte</li>
-            <div class="prices">
-                <p>S 3.25</p>
-                <p>M 3.75</p>
-                <p>L 4.50</p>
-            </div>
-            <li>Caffe Mocha</li>
-            <div class="prices">
-                <p>S 3.25</p>
-                <p>M 4.00</p>
-                <p>L 4.75</p>
-            </div>
-            <li>Hot Chocolate</li>
-            <div class="prices">
-                <p>S 2.75</p>
-                <p>M 3.25</p>
-                <p>L 3.95</p>
-            </div>
-            <li>Chai Latte</li>
-            <div class="prices">
-                <p>S 3.25</p>
-                <p>M 3.95</p>
-                <p>L 4.25</p>
-            </div>
-        </ul>
-        </div>
         <div class="columns">
-    <h3 id="Cold Drinks"> Cold Drinks</h3>
-        <ul>
-            <li>Coffee</li>
-            <p>M 2.70</p>
-            <li>Americano</li>
-            <div class="prices">
-                <p>S 2.00</p>
-                <p>M 2.50</p>
-                <p>L 3.25</p>
+            <h3 id="Cold Drinks"> Cold Drinks</h3>
+                <ul>
+                    <li>Coffee</li>
+                    <p>M 2.70</p>
+                    <li>Americano</li>
+                    <div class="prices">
+                        <p>S 2.00</p>
+                        <p>M 2.50</p>
+                        <p>L 3.25</p>
+                    </div>
+                    <li>Mocha</li>
+                    <div class="prices">
+                        <p>S 3.25</p>
+                        <p>M 3.95</p>
+                        <p>L 4.25</p>
+                    </div>    
+                    <li>Latte</li>
+                    <div class="prices">
+                        <p>S 3.25</p>
+                        <p>M 3.75</p>
+                        <p>L 4.50</p>
+                    </div>
+                    <li>Chai</li>
+                    <div class="prices">
+                        <p>S 3.25</p>
+                        <p>M 3.95</p>
+                        <p>L 4.25</p>
+                    </div>
+                    <li>Mocha Frappe</li>
+                    <div class="prices">
+                        <p>S 4.25</p>
+                        <p>L 5.00</p>
+                    </div>
+                    <li>Thai Cappuccino</li>
+                    <p>M 4.00</p>
+                    <li>Thai Tea</li>
+                    <p>M 3.25</p>
+                    <li>Iced Tea</li>
+                    <div class="prices">
+                        <p>M 2.50</p>
+                        <p>L 2.75</p>
+                    </div>
+                </ul>
             </div>
-            <li>Mocha</li>
-            <div class="prices">
-                <p>S 3.25</p>
-                <p>M 3.95</p>
-                <p>L 4.25</p>
-            </div>    
-            <li>Latte</li>
-            <div class="prices">
-                <p>S 3.25</p>
-                <p>M 3.75</p>
-                <p>L 4.50</p>
-            </div>
-            <li>Chai</li>
-            <div class="prices">
-                <p>S 3.25</p>
-                <p>M 3.95</p>
-                <p>L 4.25</p>
-            </div>
-            <li>Mocha Frappe</li>
-            <div class="prices">
-                <p>S 4.25</p>
-                <p>L 5.00</p>
-            </div>
-            <li>Thai Cappuccino</li>
-            <p>M 4.00</p>
-            <li>Thai Tea</li>
-            <p>M 3.25</p>
-            <li>Iced Tea</li>
-            <div class="prices">
-                <p>M 2.50</p>
-                <p>L 2.75</p>
-            </div>
-        </ul>
-        </div>
     </div>
-   <div class="container">
+   <div class="food">
        <div class="column2">
            <h3 id="Paninis">Paninis</h3>
        </div>
        <div class="column2">
            <h3>All 6.95</h3>
        </div>
-    </div>
         <ul>
             <li>Italiano</li>
             <p>Grilled baguette with prosciutto, mozzarella, sliced tomato, basil pesto, and a touch of balsamic vinegar</p>
@@ -172,7 +180,8 @@
             <li>Mediterranean Chicken</li>
             <p>Grilled ciabatta bread with spiced chicken breast, mozzarella, roasted red peppers, sliced tomato and sun dried tomato pesto</p>
         </ul>
-    <div class="container">
+    </div>
+    <div class="sweets">
         <div class="column2">
             <h3 id="Croissants">Croissants</h3>
         </div>
@@ -185,7 +194,7 @@
             <li>Ham and Swiss</li>
         </ul>
     </div>
-    <div class="container">
+    <div class="sweets">
         <div class="column2">
             <h3 id="Muffins"> Muffins</h3>
         </div>
@@ -197,7 +206,7 @@
         <li>Blueberry</li>
     </ul>
     </div>
-    <div class="container">
+    <div class="sweets">
         <div class="column2">
             <h3 id="Bagels"> Bagels</h3>
         </div>
@@ -211,7 +220,7 @@
             <li>Jalapeno Asiago</li>
         </ul>
     </div>
-    <div class="container">
+    <div class="sweets">
         <div class="column2">
             <h3 id="Chocolate Chip Cookie">Chocolate Chip Cookie</h3>
         </div>
@@ -219,7 +228,7 @@
             <h3>2.11</h3>
         </div>
     </div>
-    <div class="container">
+    <div class="sweets">
         <div class="column2">
             <h3 id="Brownie">Brownie</h3>
         </div>
@@ -228,26 +237,36 @@
         </div>
     </div>
     <footer>
-        <h4 id="Contact Us">Contact Us</h4>
-            <ul>
-                <li>(480)727-0377</li>
-                <li>charliescafesm@outlook.com</li>
-            </ul>
-        <h4>Hours</h4>
-            <ul>
-                <li>Mon-Th: 7am-4pm</li>
-                <li>Fri: 7am-3pm</li>
-                <li>Sat-Sun: closed</li>
-            </ul>
-        <h4 id="Locations">Locations</h4>
-            <ul>
-                <li>E Tyler St Tempe, Az 85281</li>
-                <li>900 Cady Mall Tempe, Az 85281</li>
-            </ul>
-        <h4> Follow Us:</h4>
-        <img src="img/instagram.png" alt="instagram button" height="10%" width="10%"/>
-        <img src="img/facebook.png" alt="facebook button" height="10%" width="10%"/>
-        <img src="img/twitter.png" alt="twitter button" height="10%" width="10%"/>
+        <div class="about">
+            <div class="info">
+                <h4 id="Contact Us">Contact Us</h4>
+                    <ul>
+                        <li>(480)727-0377</li>
+                        <li>charliescafesm@outlook.com</li>
+                    </ul>
+            </div>
+            <div class="info">
+                <h4>Hours</h4>
+                    <ul>
+                        <li>Mon-Th: 7am-4pm</li>
+                        <li>Fri: 7am-3pm</li>
+                        <li>Sat-Sun: closed</li>
+                    </ul>
+            </div>
+            <div class="info">
+                <h4 id="Locations">Locations</h4>
+                    <ul>
+                        <li>E Tyler St Tempe, Az 85281</li>
+                        <li>900 Cady Mall Tempe, Az 85281</li>
+                    </ul>
+            </div>
+            <div class="info">
+                <h4> Follow Us:</h4>
+                <img src="img/instagram.png" alt="instagram button"/>
+                <img src="img/facebook.png" alt="facebook button"/>
+                <img src="img/twitter.png" alt="twitter button"/>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

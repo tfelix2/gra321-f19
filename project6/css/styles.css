@@ -160,7 +160,8 @@ footer {
     background-color: #5c320D;
     padding-top: 30px;
     padding-right: 30px;
-    padding-bottom: 30px
+    padding-bottom: 30px;
+    margin-top: 30px;
 }
 
 footer li{
@@ -222,8 +223,8 @@ img {
     }
     
     picture img{
-        padding-left: 519px;
-        width: 59%;
+        padding-left: 442px;
+        width: 65%;
     }
 
     .column {
@@ -257,6 +258,15 @@ img {
     
     .sweets {
         padding-left: 40px;
+    }
+    
+    footer ul {
+        padding-left: 25px;
+    }
+    
+    footer img {
+        position: relative;
+        left: 23px;
     }
     
     .about{

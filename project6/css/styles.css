@@ -32,7 +32,7 @@ body {
 .column {
     width:28%;
     position:relative;
-    left:170px;
+    left:167px;
     top: 21px;
     padding-right: .25rem;
     font-weight:400;
@@ -97,8 +97,8 @@ nav a:hover {
 
 #sidebar .toggle-btn{ 
     position: absolute;
-    left: 312px;
-    top: 5px;
+    left: 320px;
+    top: 1.5px;
   }
 
 #sidebar .toggle-btn span{

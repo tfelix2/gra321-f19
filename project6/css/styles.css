@@ -83,7 +83,8 @@ nav a:hover {
 }
 
 #sidebar{
-    position: relative;
+    position:absolute;
+    width: 280px;
     background: #FFE7CF;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -92,17 +93,17 @@ nav a:hover {
 }
 
 #sidebar.active{
-    left:0px;
+    left: 0px;
 }
 
 #sidebar .toggle-btn{ 
     position: absolute;
     left: 320px;
     top: 1.5px;
-  }
+}
 
 #sidebar .toggle-btn span{
-   display: block;
+   display:block;
    width: 25px;
    height: 2px;
    background: #5c320D;
@@ -137,18 +138,6 @@ h3 {
     display: grid;
     grid-template-columns: 120px 120px 120px;
     position:relative;
-}
-
-.columns {
-    float: left;
-    width: 50%;
-}
-
-/* Clear floats after the columns */
-.drinks:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 .food{
@@ -204,17 +193,6 @@ footer img{
     width: 40px;
 }
 
-.info {
-    float: left;
-}
-
-/* Clear floats after the columns */
-.about:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
 li {
     color: #5c320D;
     margin-bottom: .5rem;
@@ -256,7 +234,7 @@ img {
     .column {
         width:8%;
         position:relative;
-        left:64px;
+        left:40px;
         top: 23px;
         padding-right: .25rem;
         font-weight:400;
@@ -285,6 +263,8 @@ img {
     
     .drinks {
         padding-left: 40px;
+        display: grid;
+        grid-template-columns: 550px 550px;
     }
     
     .food {
@@ -307,20 +287,8 @@ img {
     
     .about{
         padding-left: 40px;
-    }
-    
-    .info{
-        padding-right: 72px;
+        display: grid;
+        grid-template-columns: 320px 230px 340px 270px;
     }
 }
 
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-    .columns {
-        width: 100%;
-    }
-    
-    .info{
-        width:100%;
-    }
-}
